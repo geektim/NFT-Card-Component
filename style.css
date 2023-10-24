@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+/* style for the container */
+.container {
+    max-width: 1440px;
+    height: 100svh;
+    margin: auto auto;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for the card */
+.card {
+    width: 270px;
+    height: 450px;
+    background: hsl(216, 50%, 16%);
+    box-shadow: 10px 15px 25px 25px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* style for the image at the top */
+.img-container {
+    width: 230px;
+    height: auto;
+    position: relative;
+}
+
+.img-container .image {
+    max-width: 100%;
+    opacity: 1;
+    display: block;
+    height: auto;
+    border-radius: 5px;
+}
+
+.middle {
+    width: inherit;
+    height: 230px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(178, 100%, 50%, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.img-container:hover .image {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.img-container:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* style for the texts in the middle */
+.texts {
+    width: 230px;
+    height: auto;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.texts h1 {
+    font-weight: 600;
+    font-size: large;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+.texts h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.texts p {
+    font-weight: 300;
+    font-size: small;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 15px;
+}
+
+.sub-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sub-text img {
+    margin-right: 5px;
+}
+
+.sub-text .price {
+    display: flex;
+    align-items: center;
+}
+
+.sub-text .price p {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    margin-bottom: 0;
+}
+
+.sub-text .time {
+    display: flex;
+    align-items: center;
+}
+
+.sub-text .time p {
+    margin-bottom: 0;
+}
+
+/* style for the image and texts at the foot */
+.foot {
+    width: 230px;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.foot .foot-img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.foot-img img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.foot p {
+    font-weight: 300;
+    font-size: small;
+}
+
+span.one {
+    color: hsl(215, 51%, 70%);
+}
+
+span.two {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+span.two:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
